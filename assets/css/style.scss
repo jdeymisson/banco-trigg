@@ -2,7 +2,7 @@
 
 * {
   @include reset;
-  border: 2px solid #222;
+  // border: 2px solid #222;
 }
 
 .container {
@@ -15,7 +15,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-
   color: $aux-white-color;
 }
 
@@ -27,11 +26,12 @@ header {
   gap: 96px;
 
   .trigg-logo {
-    max-width: 141px;
-
-    img {
-      display: inline-block;
+    .logo-size {
       max-width: 141px;
+    }
+    img {
+      margin-left: -34px;
+      width: 100%;
     }
   }
 
@@ -45,7 +45,7 @@ header {
       flex: 1;
       gap: 16px;
       flex-wrap: wrap;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
       list-style: none;
 
@@ -78,63 +78,65 @@ header {
   }
 }
 
-.content-left {
+.content-banner {
   display: flex;
-  h1 {
-    margin-top: 64px;
-    @include font(h1);
-    text-transform: uppercase;
-  }
+  justify-content: space-between;
 
-  .div {
+  .content-left {
     flex: 1;
-  }
+    h1 {
+      margin-top: 84px;
+      @include font(h1);
+      text-transform: uppercase;
+    }
 
-  .content-benefits {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    // flex: 1;
-    // flex-wrap: wrap;
-    // align-content: center;
-    // background: red;
-    // flex-wrap: wrap;
-    .box-benefits {
-      background-color: red;
-      .icon-benefits {
-        width: 28px;
-        height: 28px;
-        margin-bottom: 16px;
+    .content-benefits {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-content: center;
 
-        img {
-          display: inline-block;
-          width: 100%;
-          height: 100%;
-        }
+      margin-top: 46px;
+
+      .box-benefits {
+        flex: 1 1 150px;
+        padding: 5px;
+      }
+    }
+
+    .store {
+      max-width: 35%;
+      padding: 5px;
+      margin-top: 35px;
+
+      img {
+        max-width: 100%;
       }
     }
   }
 
-  .store {
-    margin-top: 36px;
-    max-width: 45%;
+  .content-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 
-    img {
-      width: 100%;
+    position: relative;
+
+    .cel {
+      flex: 0 0 350px;
+      img {
+        width: 100%;
+      }
     }
-  }
-}
 
-.content-right {
-  flex: 1;
-  background-color: red;
-
-  .cel {
-    margin-top: 64px;
-    max-width: 100%;
-
-    img {
-      width: 80%;
+    .social {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      bottom: 50px;
+      right: 12px;
+      position: absolute;
     }
   }
 }

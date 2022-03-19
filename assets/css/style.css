@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-* {
-  border: 2px solid #222;
-}
-
 * * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -40,13 +36,13 @@ header {
   gap: 96px;
 }
 
-header .trigg-logo {
+header .trigg-logo .logo-size {
   max-width: 141px;
 }
 
 header .trigg-logo img {
-  display: inline-block;
-  max-width: 141px;
+  margin-left: -34px;
+  width: 100%;
 }
 
 header .menu {
@@ -71,9 +67,9 @@ header .menu ul {
   gap: 16px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -117,74 +113,94 @@ header .menu ul .menu-user .icon-user img {
   width: 100%;
 }
 
-.content-left {
+.content-banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.content-left h1 {
-  margin-top: 64px;
-  font-size: 6rem;
+.content-banner .content-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.content-banner .content-left h1 {
+  margin-top: 84px;
+  font-size: 5rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.content-left .div {
+.content-banner .content-left .content-benefits {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-.content-left .content-benefits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 46px;
 }
 
-.content-left .content-benefits .box-benefits {
-  background-color: red;
-}
-
-.content-left .content-benefits .box-benefits .icon-benefits {
-  width: 28px;
-  height: 28px;
-  margin-bottom: 16px;
-}
-
-.content-left .content-benefits .box-benefits .icon-benefits img {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-
-.content-left .store {
-  margin-top: 36px;
-  max-width: 45%;
-}
-
-.content-left .store img {
-  width: 100%;
-}
-
-.content-right {
+.content-banner .content-left .content-benefits .box-benefits {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-color: red;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  padding: 5px;
 }
 
-.content-right .cel {
-  margin-top: 64px;
+.content-banner .content-left .store {
+  max-width: 35%;
+  padding: 5px;
+  margin-top: 35px;
+}
+
+.content-banner .content-left .store img {
   max-width: 100%;
 }
 
-.content-right .cel img {
-  width: 80%;
+.content-banner .content-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.content-banner .content-right .cel {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 350px;
+          flex: 0 0 350px;
+}
+
+.content-banner .content-right .cel img {
+  width: 100%;
+}
+
+.content-banner .content-right .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  bottom: 50px;
+  right: 12px;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
