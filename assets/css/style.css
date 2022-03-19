@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   border: 2px solid #222;
 }
@@ -115,5 +115,76 @@ header .menu ul .menu-user .icon-user {
 
 header .menu ul .menu-user .icon-user img {
   width: 100%;
+}
+
+.content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-left h1 {
+  margin-top: 64px;
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.content-left .div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.content-left .content-benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content-left .content-benefits .box-benefits {
+  background-color: red;
+}
+
+.content-left .content-benefits .box-benefits .icon-benefits {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 16px;
+}
+
+.content-left .content-benefits .box-benefits .icon-benefits img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.content-left .store {
+  margin-top: 36px;
+  max-width: 45%;
+}
+
+.content-left .store img {
+  width: 100%;
+}
+
+.content-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: red;
+}
+
+.content-right .cel {
+  margin-top: 64px;
+  max-width: 100%;
+}
+
+.content-right .cel img {
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */

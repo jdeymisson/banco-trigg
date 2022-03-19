@@ -77,3 +77,64 @@ header {
     }
   }
 }
+
+.content-left {
+  display: flex;
+  h1 {
+    margin-top: 64px;
+    @include font(h1);
+    text-transform: uppercase;
+  }
+
+  .div {
+    flex: 1;
+  }
+
+  .content-benefits {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    // flex: 1;
+    // flex-wrap: wrap;
+    // align-content: center;
+    // background: red;
+    // flex-wrap: wrap;
+    .box-benefits {
+      background-color: red;
+      .icon-benefits {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 16px;
+
+        img {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .store {
+    margin-top: 36px;
+    max-width: 45%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.content-right {
+  flex: 1;
+  background-color: red;
+
+  .cel {
+    margin-top: 64px;
+    max-width: 100%;
+
+    img {
+      width: 80%;
+    }
+  }
+}
