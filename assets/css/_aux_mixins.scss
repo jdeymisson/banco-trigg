@@ -16,7 +16,7 @@ $aux-gray-color: #e5e5e5;
 }
 @mixin font($type) {
   @if $type == desc16 {
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 22px;
   } @else if $type == txt18 {
     font-size: 1.125rem;

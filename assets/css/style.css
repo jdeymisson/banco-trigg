@@ -59,29 +59,31 @@ header .menu {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: red;
 }
 
 header .menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 16px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 22px;
 }
 
 header .menu ul .access {
-  padding: 10px 30px;
+  padding: 8px 24px;
   border: 1px solid #fff;
   border-radius: 6px;
   font-weight: bold;
