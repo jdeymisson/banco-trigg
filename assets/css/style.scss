@@ -1,0 +1,79 @@
+@import "aux_mixins";
+
+* {
+  @include reset;
+  border: 2px solid #222;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 10px;
+  margin: auto;
+}
+.content-hero {
+  background-image: url("../images/fullbanner.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  color: $aux-white-color;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
+
+  .trigg-logo {
+    max-width: 141px;
+
+    img {
+      display: inline-block;
+      max-width: 141px;
+    }
+  }
+
+  .menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+
+    ul {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+
+      .access {
+        padding: 10px 30px;
+        border: 1px solid $aux-white-color;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+
+      @include font("desc16");
+
+      .menu-user {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .icon-user {
+          width: 20px;
+          height: 20px;
+
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+$btn-grad-bg: linear-gradient(24.68deg, #019f92 -50.25%, #00cebc 183.87%),
+  rgba(245, 245, 245, 0.0001);
+$primary-gren-color: #00bdad;
+$second-gren-color: #01b6a6;
+$aux-white-color: #fff;
+$aux-gray-color: #e5e5e5;
+
+@mixin reset {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+}
+@mixin font($type) {
+  @if $type == desc16 {
+    font-size: 1rem;
+    line-height: 22px;
+  } @else if $type == txt18 {
+    font-size: 1.125rem;
+    line-height: 27px;
+  } @else if $type == txt24 {
+    font-size: 1.125rem;
+    line-height: 27px;
+  } @else if $type == txt44 {
+    font-size: 2.75rem;
+  } @else if $type == h1 {
+    font-size: 7.5rem;
+  } @else if $type == h2 {
+    font-size: 3.8125rem;
+  } @else if $type == h3 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+}
