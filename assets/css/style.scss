@@ -5,6 +5,9 @@
   // border: 2px solid #222;
 }
 
+body {
+  width: 100%;
+}
 .container {
   max-width: 1300px;
   padding: 0 10px;
@@ -15,6 +18,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  padding-bottom: 180px;
   color: $aux-white-color;
 }
 
@@ -102,16 +106,23 @@ header {
       .box-benefits {
         flex: 1 1 150px;
         padding: 5px;
+
+        span {
+          @include font(desc16);
+          display: inline-block;
+          margin-top: 10px;
+        }
       }
     }
 
     .store {
       max-width: 35%;
       padding: 5px;
-      margin-top: 35px;
+      margin-top: 8pxpx;
 
       img {
         max-width: 100%;
+        min-width: 200px;
       }
     }
   }
@@ -137,6 +148,90 @@ header {
       bottom: 50px;
       right: 12px;
       position: absolute;
+    }
+  }
+}
+.demostration {
+  .image-hero {
+    max-width: 100%;
+    margin: -150px auto 0 auto;
+
+    img {
+      max-width: 100%;
+    }
+
+    .border-hero {
+      display: flex;
+    }
+
+    .border-color1 {
+      flex: 0 1 583px;
+      height: 10px;
+      background: #01cfbb;
+    }
+    .border-color2 {
+      flex: 0 1 582px;
+      height: 10px;
+      background: #01e8d2;
+    }
+    .border-color3 {
+      flex: 0 1 582px;
+      height: 10px;
+      background: #01ffe7;
+    }
+  }
+}
+
+.cashleft {
+  background: $aux-gray-color;
+
+  .cash-title {
+    padding-top: 120px;
+
+    .img-cash {
+      width: 50px;
+      img {
+        width: 100%;
+      }
+    }
+
+    h3 {
+      @include font(h3);
+      text-transform: uppercase;
+    }
+
+    p {
+      @include font(txt24);
+      color: $second-gren-color;
+      margin-top: 16px;
+      margin-bottom: 64px;
+    }
+
+    .btn {
+      max-width: 100px;
+      background: $primary-gren-color;
+
+      @include font(desc16);
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $aux-white-color;
+
+      padding: 12px 30px;
+      border-radius: 6px;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #31cfbf;
+      }
+    }
+
+    .store-cash {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
     }
   }
 }

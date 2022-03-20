@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  width: 100%;
+}
+
 .container {
   max-width: 1300px;
   padding: 0 10px;
@@ -18,6 +22,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  padding-bottom: 180px;
   color: #fff;
 }
 
@@ -157,14 +162,22 @@ header .menu ul .menu-user .icon-user img {
   padding: 5px;
 }
 
+.content-banner .content-left .content-benefits .box-benefits span {
+  font-size: 0.875rem;
+  line-height: 22px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
 .content-banner .content-left .store {
   max-width: 35%;
   padding: 5px;
-  margin-top: 35px;
+  margin-top: 8pxpx;
 }
 
 .content-banner .content-left .store img {
   max-width: 100%;
+  min-width: 200px;
 }
 
 .content-banner .content-right {
@@ -202,5 +215,104 @@ header .menu ul .menu-user .icon-user img {
   bottom: 50px;
   right: 12px;
   position: absolute;
+}
+
+.demostration .image-hero {
+  max-width: 100%;
+  margin: -150px auto 0 auto;
+}
+
+.demostration .image-hero img {
+  max-width: 100%;
+}
+
+.demostration .image-hero .border-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.demostration .image-hero .border-color1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 583px;
+          flex: 0 1 583px;
+  height: 10px;
+  background: #01cfbb;
+}
+
+.demostration .image-hero .border-color2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 582px;
+          flex: 0 1 582px;
+  height: 10px;
+  background: #01e8d2;
+}
+
+.demostration .image-hero .border-color3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 582px;
+          flex: 0 1 582px;
+  height: 10px;
+  background: #01ffe7;
+}
+
+.cashleft {
+  background: #e5e5e5;
+}
+
+.cashleft .cash-title {
+  padding-top: 120px;
+}
+
+.cashleft .cash-title .img-cash {
+  width: 50px;
+}
+
+.cashleft .cash-title .img-cash img {
+  width: 100%;
+}
+
+.cashleft .cash-title h3 {
+  font-size: 2rem;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.cashleft .cash-title p {
+  font-size: 1.125rem;
+  line-height: 27px;
+  color: #01b6a6;
+  margin-top: 16px;
+  margin-bottom: 64px;
+}
+
+.cashleft .cash-title .btn {
+  max-width: 100px;
+  background: #00bdad;
+  font-size: 0.875rem;
+  line-height: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 6px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.cashleft .cash-title .btn:hover {
+  background: #31cfbf;
+}
+
+.cashleft .cash-title .store-cash {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
 }
 /*# sourceMappingURL=style.css.map */
