@@ -119,6 +119,7 @@ header {
 
   .content-left {
     flex: 1;
+    animation: Show  .5s forwards;
     h1 {
       margin-top: 84px;
       @include font(h1);
@@ -159,6 +160,7 @@ header {
   }
 
   .content-right {
+    animation: Show .5s forwards;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -415,4 +417,15 @@ footer {
   background: $primary-gren-color;
   padding: 20px 0;
   color: $aux-white-color;
+}
+
+@keyframes Show {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }

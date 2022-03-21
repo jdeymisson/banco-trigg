@@ -178,6 +178,8 @@ header .menu ul .menu-user .icon-user img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-animation: Show  .5s forwards;
+          animation: Show  .5s forwards;
 }
 
 .content-banner .content-left h1 {
@@ -228,6 +230,8 @@ header .menu ul .menu-user .icon-user img {
 }
 
 .content-banner .content-right {
+  -webkit-animation: Show .5s forwards;
+          animation: Show .5s forwards;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -576,5 +580,31 @@ footer {
   background: #00bdad;
   padding: 20px 0;
   color: #fff;
+}
+
+@-webkit-keyframes Show {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes Show {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
