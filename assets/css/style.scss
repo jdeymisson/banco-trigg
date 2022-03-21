@@ -2,7 +2,9 @@
 
 * {
   @include reset;
-  // border: 2px solid #222;
+  img {
+    display: block;
+  }
 }
 
 body {
@@ -182,9 +184,16 @@ header {
   }
 }
 
+.cashback {
+  display: flex;
+  justify-content: center;
+}
+
 .cashleft {
   background: $aux-gray-color;
-
+  flex: 1;
+  display: flex;
+  justify-content: center;
   .cash-title {
     padding-top: 120px;
 
@@ -234,4 +243,8 @@ header {
       gap: 24px;
     }
   }
+}
+
+.cashright {
+  flex: 1;
 }

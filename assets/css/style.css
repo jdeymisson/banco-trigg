@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+* img {
+  display: block;
+}
+
 body {
   width: 100%;
 }
@@ -256,8 +260,26 @@ header .menu ul .menu-user .icon-user img {
   background: #01ffe7;
 }
 
+.cashback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .cashleft {
-  background: #e5e5e5;
+  background: #e5e5e523;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cashleft .cash-title {
@@ -314,5 +336,11 @@ header .menu ul .menu-user .icon-user img {
       -ms-flex-align: center;
           align-items: center;
   gap: 24px;
+}
+
+.cashright {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=style.css.map */
