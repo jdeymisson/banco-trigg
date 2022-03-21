@@ -308,8 +308,8 @@ header {
     max-width: 320px;
     margin-top: 50px;
     .happy, .pig-white {
-      width: 50px;
-      height: 50px;
+      width: 70px;
+      height: 70px;
 
       img {
         width: 100%;
@@ -319,7 +319,7 @@ header {
     .happy {
       position: absolute;
       top: 40%;
-      left: 12%;
+      left: 8%;
       animation: iconHappy 1s ease-in alternate infinite;
     }
     .pig-white {

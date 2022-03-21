@@ -444,8 +444,8 @@ header .menu ul .menu-user .icon-user img {
 }
 
 .cashcenter .cel-desmonstration .happy, .cashcenter .cel-desmonstration .pig-white {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 .cashcenter .cel-desmonstration .happy img, .cashcenter .cel-desmonstration .pig-white img {
@@ -455,7 +455,7 @@ header .menu ul .menu-user .icon-user img {
 .cashcenter .cel-desmonstration .happy {
   position: absolute;
   top: 40%;
-  left: 12%;
+  left: 8%;
   -webkit-animation: iconHappy 1s ease-in alternate infinite;
           animation: iconHappy 1s ease-in alternate infinite;
 }
