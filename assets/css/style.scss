@@ -168,7 +168,7 @@ header {
     position: relative;
 
     .cel {
-      flex: 0 0 350px;
+      flex: 0 0 300px;
       img {
         width: 100%;
 
@@ -245,9 +245,10 @@ header {
 
 .cashleft {
   background: $aux-gray-color;
-  flex: 1;
+  flex: 1 1 300px;
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
   .cash-title {
     padding-top: 120px;
 
@@ -300,17 +301,50 @@ header {
 }
 
 .cashcenter {
-  
+  position: relative;
   .cel-desmonstration {
+
     flex: 1;
-    background-color: red;
-    max-width: 250px;
+    max-width: 320px;
     margin-top: 50px;
+    .happy, .pig-white {
+      width: 50px;
+      height: 50px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .happy {
+      position: absolute;
+      top: 40%;
+      left: 12%;
+      animation: iconHappy 1s ease-in alternate infinite;
+    }
+    .pig-white {
+      position: absolute;
+      top: 20%;
+      right: 10%;
+      animation: iconPig 1.2s ease-in alternate infinite;
+    }
     img {
       max-width: 100%;
     }
   }
 }
+
+@keyframes iconHappy {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes iconPig {
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
 
 .cashright {
   flex: 1 1 300px;

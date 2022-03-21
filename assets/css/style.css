@@ -246,8 +246,8 @@ header .menu ul .menu-user .icon-user img {
 
 .content-banner .content-right .cel {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 350px;
-          flex: 0 0 350px;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
 }
 
 .content-banner .content-right .cel img {
@@ -362,16 +362,17 @@ header .menu ul .menu-user .icon-user img {
 }
 
 .cashleft {
-  background: #e5e5e523;
+  background: #e5e5e538;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 50px;
 }
 
 .cashleft .cash-title {
@@ -430,17 +431,73 @@ header .menu ul .menu-user .icon-user img {
   gap: 24px;
 }
 
+.cashcenter {
+  position: relative;
+}
+
 .cashcenter .cel-desmonstration {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: red;
-  max-width: 250px;
+  max-width: 320px;
   margin-top: 50px;
+}
+
+.cashcenter .cel-desmonstration .happy, .cashcenter .cel-desmonstration .pig-white {
+  width: 50px;
+  height: 50px;
+}
+
+.cashcenter .cel-desmonstration .happy img, .cashcenter .cel-desmonstration .pig-white img {
+  width: 100%;
+}
+
+.cashcenter .cel-desmonstration .happy {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  -webkit-animation: iconHappy 1s ease-in alternate infinite;
+          animation: iconHappy 1s ease-in alternate infinite;
+}
+
+.cashcenter .cel-desmonstration .pig-white {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  -webkit-animation: iconPig 1.2s ease-in alternate infinite;
+          animation: iconPig 1.2s ease-in alternate infinite;
 }
 
 .cashcenter .cel-desmonstration img {
   max-width: 100%;
+}
+
+@-webkit-keyframes iconHappy {
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes iconHappy {
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes iconPig {
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+@keyframes iconPig {
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
 }
 
 .cashright {
