@@ -87,11 +87,54 @@ header .menu ul {
   line-height: 22px;
 }
 
+header .menu ul li {
+  position: relative;
+}
+
+header .menu ul .li-list:hover::before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: -7px;
+  left: 0;
+  -webkit-animation: lianimate .5s  forwards;
+          animation: lianimate .5s  forwards;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+  height: 5px;
+  background: #01ffe7;
+}
+
+@-webkit-keyframes lianimate {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes lianimate {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 header .menu ul .access {
   padding: 8px 24px;
   border: 1px solid #fff;
   border-radius: 6px;
   font-weight: bold;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+header .menu ul .access:hover {
+  background: #fff;
+  color: #01cfbb;
 }
 
 header .menu ul .menu-user {
@@ -101,7 +144,7 @@ header .menu ul .menu-user {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 16px;
+  gap: 8px;
 }
 
 header .menu ul .menu-user .icon-user {

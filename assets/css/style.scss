@@ -55,11 +55,40 @@ header {
       align-items: center;
       list-style: none;
 
+      li {
+        position: relative;
+      }
+
+      .li-list:hover::before {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -7px;
+        left: 0;
+        animation: lianimate .5s  forwards;
+        transition: width .5s;
+        height: 5px;
+        background: #01ffe7;
+      }
+
+      @keyframes lianimate {
+       from {
+         width: 0%;
+       } to {
+         width: 100%;
+       }
+      }
       .access {
         padding: 8px 24px;
         border: 1px solid $aux-white-color;
         border-radius: 6px;
         font-weight: bold;
+        transition: all .5s ease;
+
+        &:hover {
+          background: $aux-white-color;
+          color: #01cfbb;
+        }
       }
 
       @include font("desc16");
@@ -67,7 +96,7 @@ header {
       .menu-user {
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 8px;
         .icon-user {
           width: 20px;
           height: 20px;
