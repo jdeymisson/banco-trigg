@@ -5,6 +5,7 @@ $primary-gren-color: #00bdad;
 $second-gren-color: #01b6a6;
 $aux-white-color: #fff;
 $aux-gray-color: #e5e5e523;
+$aux2-gray-color: #e5e5e5e0;
 
 @mixin reset {
   * {
@@ -22,8 +23,11 @@ $aux-gray-color: #e5e5e523;
     font-size: 1.125rem;
     line-height: 27px;
   } @else if $type == txt24 {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     line-height: 27px;
+  } @else if $type == txt32 {
+    font-size: 2rem;
+    line-height: 42px;
   } @else if $type == txt44 {
     font-size: 2.75rem;
   } @else if $type == h1 {

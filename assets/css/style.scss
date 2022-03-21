@@ -154,6 +154,8 @@ header {
   }
 }
 .demostration {
+  position: relative;
+
   .image-hero {
     max-width: 100%;
     margin: -150px auto 0 auto;
@@ -182,10 +184,21 @@ header {
       background: #01ffe7;
     }
   }
+
+  .cel-desmonstration {
+    position: absolute;
+    max-width: 300px;
+    top: 50%;
+    left: 40%;
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .cashback {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -247,4 +260,101 @@ header {
 
 .cashright {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+
+  padding: 120px 0;
+
+  h3 {
+    @include font(txt18);
+    margin-bottom: 16px;
+  }
+
+  sub {
+    @include font(desc16);
+  }
+
+  .simulate {
+    @include font(txt32);
+    font-weight: bold;
+    color: $primary-gren-color;
+    margin-top: 25px;
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 18rem;
+    height: 0.5em;
+    position: relative;
+    border-radius: 5px;
+    background: $aux2-gray-color;
+    outline: none;
+    margin: 25px 0;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $primary-gren-color;
+    }
+  }
+
+  .box-offer {
+    display: flex;
+    gap: 16px;
+
+    .box {
+      flex: 1 1 0;
+      height: 150px;
+      background: $aux-white-color;
+      border-radius: 6px;
+      text-align: center;
+
+      box-shadow: 0px 5px 8px rgba(34, 34, 34, 0.445);
+      p {
+        @include font(desc16);
+        font-weight: bold;
+        text-align: center;
+        color: $aux-white-color;
+
+        background: $primary-gren-color;
+        border-radius: 6px 6px 0 0;
+        padding: 5px 20px;
+      }
+
+      span {
+        display: inline-block;
+        @include font(txt24);
+        font-weight: bold;
+
+        padding-top: 24px;
+      }
+    }
+
+    .box-resgate {
+      flex: 1 1 0;
+      height: 150px;
+      background: $second-gren-color;
+      border-radius: 6px;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      font-weight: bold;
+      color: $aux-white-color;
+      @include font(desc16);
+
+      .rs {
+        @include font(txt18);
+      }
+    }
+  }
 }
