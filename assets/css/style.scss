@@ -206,7 +206,6 @@ header {
   }
 }
 .demostration {
-  position: relative;
 
   .image-hero {
     max-width: 100%;
@@ -234,16 +233,6 @@ header {
       flex: 0 1 582px;
       height: 10px;
       background: #01ffe7;
-    }
-  }
-
-  .cel-desmonstration {
-    position: absolute;
-    max-width: 250px;
-    top: 50%;
-    left: 40%;
-    img {
-      max-width: 100%;
     }
   }
 }
@@ -310,12 +299,25 @@ header {
   }
 }
 
+.cashcenter {
+  
+  .cel-desmonstration {
+    flex: 1;
+    background-color: red;
+    max-width: 250px;
+    margin-top: 50px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
 .cashright {
-  flex: 1;
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: flex-end;
+  align-content: center;
 
   padding: 120px 0;
 
