@@ -187,7 +187,7 @@ header {
 
   .cel-desmonstration {
     position: absolute;
-    max-width: 300px;
+    max-width: 250px;
     top: 50%;
     left: 40%;
     img {
@@ -316,7 +316,7 @@ header {
       border-radius: 6px;
       text-align: center;
 
-      box-shadow: 0px 5px 8px rgba(34, 34, 34, 0.445);
+      box-shadow: 0px 5px 6px rgba(34, 34, 34, 0.247);
       p {
         @include font(desc16);
         font-weight: bold;
@@ -325,7 +325,7 @@ header {
 
         background: $primary-gren-color;
         border-radius: 6px 6px 0 0;
-        padding: 5px 20px;
+        padding: 10px 20px;
       }
 
       span {
@@ -343,6 +343,7 @@ header {
       background: $second-gren-color;
       border-radius: 6px;
       text-align: center;
+      box-shadow: 0px 5px 6px rgba(34, 34, 34, 0.247);
 
       display: flex;
       flex-direction: column;
@@ -357,4 +358,11 @@ header {
       }
     }
   }
+}
+
+footer {
+  text-align: center;
+  background: $primary-gren-color;
+  padding: 20px 0;
+  color: $aux-white-color;
 }

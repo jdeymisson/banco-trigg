@@ -266,7 +266,7 @@ header .menu ul .menu-user .icon-user img {
 
 .demostration .cel-desmonstration {
   position: absolute;
-  max-width: 300px;
+  max-width: 250px;
   top: 50%;
   left: 40%;
 }
@@ -431,8 +431,8 @@ header .menu ul .menu-user .icon-user img {
   background: #fff;
   border-radius: 6px;
   text-align: center;
-  -webkit-box-shadow: 0px 5px 8px rgba(34, 34, 34, 0.445);
-          box-shadow: 0px 5px 8px rgba(34, 34, 34, 0.445);
+  -webkit-box-shadow: 0px 5px 6px rgba(34, 34, 34, 0.247);
+          box-shadow: 0px 5px 6px rgba(34, 34, 34, 0.247);
 }
 
 .cashright .box-offer .box p {
@@ -443,7 +443,7 @@ header .menu ul .menu-user .icon-user img {
   color: #fff;
   background: #00bdad;
   border-radius: 6px 6px 0 0;
-  padding: 5px 20px;
+  padding: 10px 20px;
 }
 
 .cashright .box-offer .box span {
@@ -462,6 +462,8 @@ header .menu ul .menu-user .icon-user img {
   background: #01b6a6;
   border-radius: 6px;
   text-align: center;
+  -webkit-box-shadow: 0px 5px 6px rgba(34, 34, 34, 0.247);
+          box-shadow: 0px 5px 6px rgba(34, 34, 34, 0.247);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,5 +483,12 @@ header .menu ul .menu-user .icon-user img {
 .cashright .box-offer .box-resgate .rs {
   font-size: 1.125rem;
   line-height: 27px;
+}
+
+footer {
+  text-align: center;
+  background: #00bdad;
+  padding: 20px 0;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
