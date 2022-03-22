@@ -42,7 +42,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 96px;
 }
 
 header .trigg-logo .logo-size {
@@ -54,18 +53,6 @@ header .trigg-logo img {
   width: 100%;
 }
 
-header .menu {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 header .menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +60,6 @@ header .menu ul {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  gap: 16px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -82,6 +68,7 @@ header .menu ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 32px;
   list-style: none;
   font-size: 0.875rem;
   line-height: 22px;
@@ -103,24 +90,6 @@ header .menu ul .li-list:hover::before {
   transition: width .5s;
   height: 5px;
   background: #01ffe7;
-}
-
-@-webkit-keyframes lianimate {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes lianimate {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
 }
 
 header .menu ul .access {
@@ -256,28 +225,6 @@ header .menu ul .menu-user .icon-user img {
           animation: CellAnimate 2s alternate infinite;
 }
 
-@-webkit-keyframes CellAnimate {
-  0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes CellAnimate {
-  0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
 .content-banner .content-right .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,20 +242,6 @@ header .menu ul .menu-user .icon-user img {
 .content-banner .content-right .social .facebook img:hover, .content-banner .content-right .social .instagram img:hover, .content-banner .content-right .social .twitter img:hover {
   -webkit-animation: SocialRotate .7s;
           animation: SocialRotate .7s;
-}
-
-@-webkit-keyframes SocialRotate {
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@keyframes SocialRotate {
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
 }
 
 .demostration .image-hero {
@@ -472,34 +405,6 @@ header .menu ul .menu-user .icon-user img {
   max-width: 100%;
 }
 
-@-webkit-keyframes iconHappy {
-  to {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@keyframes iconHappy {
-  to {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@-webkit-keyframes iconPig {
-  to {
-    -webkit-transform: rotateY(-360deg);
-            transform: rotateY(-360deg);
-  }
-}
-
-@keyframes iconPig {
-  to {
-    -webkit-transform: rotateY(-360deg);
-            transform: rotateY(-360deg);
-  }
-}
-
 .cashright {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 300px;
@@ -637,6 +542,46 @@ footer {
   color: #fff;
 }
 
+@-webkit-keyframes CellAnimate {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes CellAnimate {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes lianimate {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes lianimate {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 @-webkit-keyframes Show {
   from {
     -webkit-transform: translateX(-100px);
@@ -660,6 +605,48 @@ footer {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes SocialRotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes SocialRotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes iconHappy {
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes iconHappy {
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes iconPig {
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+@keyframes iconPig {
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

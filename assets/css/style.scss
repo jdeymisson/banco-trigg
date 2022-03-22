@@ -29,7 +29,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 96px;
 
   .trigg-logo {
     .logo-size {
@@ -42,17 +41,14 @@ header {
   }
 
   .menu {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
 
     ul {
       display: flex;
       flex: 1;
-      gap: 16px;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+      gap: 32px;
       list-style: none;
 
       li {
@@ -71,13 +67,6 @@ header {
         background: #01ffe7;
       }
 
-      @keyframes lianimate {
-       from {
-         width: 0%;
-       } to {
-         width: 100%;
-       }
-      }
       .access {
         padding: 8px 24px;
         border: 1px solid $aux-white-color;
@@ -174,15 +163,6 @@ header {
 
         animation: CellAnimate 2s alternate infinite;
       }
-
-      @keyframes CellAnimate {
-        0% {
-          transform: translateY(20px)
-        }
-        100% {
-          transform: translateY(0px)
-        }
-    }
   }
 
     .social {
@@ -195,12 +175,6 @@ header {
 
       .facebook img:hover,  .instagram img:hover,  .twitter img:hover {
         animation: SocialRotate .7s;
-      }
-    }
-
-    @keyframes SocialRotate {
-      100% {
-        transform: rotateY(360deg);
       }
     }
   }
@@ -334,18 +308,6 @@ header {
   }
 }
 
-@keyframes iconHappy {
-  to {
-    transform: rotateY(360deg);
-  }
-}
-@keyframes iconPig {
-  to {
-    transform: rotateY(-360deg);
-  }
-}
-
-
 .cashright {
   flex: 1 1 300px;
   display: flex;
@@ -455,6 +417,24 @@ footer {
   color: $aux-white-color;
 }
 
+
+@keyframes CellAnimate {
+  0% {
+    transform: translateY(20px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+@keyframes lianimate {
+  from {
+    width: 0%;
+  } to {
+    width: 100%;
+  }
+ }
+
 @keyframes Show {
   from {
     transform: translateX(-100px);
@@ -463,5 +443,22 @@ footer {
   to {
     transform: translateX(0px);
     opacity: 1;
+  }
+}
+
+@keyframes SocialRotate {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes iconHappy {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes iconPig {
+  to {
+    transform: rotateY(-360deg);
   }
 }
