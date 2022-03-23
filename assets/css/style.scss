@@ -2,14 +2,12 @@
 
 * {
   @include reset;
+
   img {
     display: block;
   }
 }
 
-body {
-  width: 100%;
-}
 .container {
   max-width: 1300px;
   padding: 0 10px;
@@ -26,13 +24,12 @@ body {
 
 header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   .trigg-logo {
     .logo-size {
-      max-width: 141px;
+      width: 141px;
     }
     img {
       margin-left: -34px;
@@ -40,12 +37,11 @@ header {
     }
   }
 
-  .menu {
+  .nav {
 
     ul {
       display: flex;
       flex: 1;
-      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       gap: 32px;

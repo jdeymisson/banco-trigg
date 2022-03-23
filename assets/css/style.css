@@ -11,10 +11,6 @@
   display: block;
 }
 
-body {
-  width: 100%;
-}
-
 .container {
   max-width: 1300px;
   padding: 0 10px;
@@ -34,8 +30,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -45,7 +39,7 @@ header {
 }
 
 header .trigg-logo .logo-size {
-  max-width: 141px;
+  width: 141px;
 }
 
 header .trigg-logo img {
@@ -53,15 +47,13 @@ header .trigg-logo img {
   width: 100%;
 }
 
-header .menu ul {
+header .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -74,11 +66,11 @@ header .menu ul {
   line-height: 22px;
 }
 
-header .menu ul li {
+header .nav ul li {
   position: relative;
 }
 
-header .menu ul .li-list:hover::before {
+header .nav ul .li-list:hover::before {
   content: '';
   position: absolute;
   display: block;
@@ -92,7 +84,7 @@ header .menu ul .li-list:hover::before {
   background: #01ffe7;
 }
 
-header .menu ul .access {
+header .nav ul .access {
   padding: 8px 24px;
   border: 1px solid #fff;
   border-radius: 6px;
@@ -101,12 +93,12 @@ header .menu ul .access {
   transition: all .5s ease;
 }
 
-header .menu ul .access:hover {
+header .nav ul .access:hover {
   background: #fff;
   color: #01cfbb;
 }
 
-header .menu ul .menu-user {
+header .nav ul .menu-user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +108,7 @@ header .menu ul .menu-user {
   gap: 8px;
 }
 
-header .menu ul .menu-user .icon-user {
+header .nav ul .menu-user .icon-user {
   width: 20px;
   height: 20px;
   display: -webkit-box;
@@ -130,7 +122,7 @@ header .menu ul .menu-user .icon-user {
           justify-content: flex-start;
 }
 
-header .menu ul .menu-user .icon-user img {
+header .nav ul .menu-user .icon-user img {
   width: 100%;
 }
 
