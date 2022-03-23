@@ -38,13 +38,12 @@ header {
   }
 
   .nav {
-
-    ul {
+    .menu {
       display: flex;
-      flex: 1;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      gap: 32px;
+      gap: 26px;
       list-style: none;
 
       li {
@@ -52,23 +51,24 @@ header {
       }
 
       .li-list:hover::before {
-        content: '';
+        content: "";
         position: absolute;
         display: block;
         bottom: -7px;
         left: 0;
-        animation: lianimate .5s  forwards;
-        transition: width .5s;
+        animation: lianimate 0.5s forwards;
+        transition: width 0.5s;
         height: 5px;
         background: #01ffe7;
       }
 
       .access {
+        flex: 0 0 auto;
         padding: 8px 24px;
         border: 1px solid $aux-white-color;
         border-radius: 6px;
         font-weight: bold;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
 
         &:hover {
           background: $aux-white-color;
@@ -104,7 +104,7 @@ header {
 
   .content-left {
     flex: 1;
-    animation: Show  .5s forwards;
+    animation: Show 0.5s forwards;
     h1 {
       margin-top: 84px;
       @include font(h1);
@@ -145,7 +145,7 @@ header {
   }
 
   .content-right {
-    animation: Show .5s forwards;
+    animation: Show 0.5s forwards;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -159,7 +159,7 @@ header {
 
         animation: CellAnimate 2s alternate infinite;
       }
-  }
+    }
 
     .social {
       display: flex;
@@ -169,14 +169,15 @@ header {
       right: 12px;
       position: absolute;
 
-      .facebook img:hover,  .instagram img:hover,  .twitter img:hover {
-        animation: SocialRotate .7s;
+      .facebook img:hover,
+      .instagram img:hover,
+      .twitter img:hover {
+        animation: SocialRotate 0.7s;
       }
     }
   }
 }
 .demostration {
-
   .image-hero {
     max-width: 100%;
     margin: -150px auto 0 auto;
@@ -273,11 +274,11 @@ header {
 .cashcenter {
   position: relative;
   .cel-desmonstration {
-
     flex: 1;
     max-width: 320px;
     margin-top: 50px;
-    .happy, .pig-white {
+    .happy,
+    .pig-white {
       width: 70px;
       height: 70px;
 
@@ -413,23 +414,23 @@ footer {
   color: $aux-white-color;
 }
 
-
 @keyframes CellAnimate {
   0% {
-    transform: translateY(20px)
+    transform: translateY(20px);
   }
   100% {
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
 }
 
 @keyframes lianimate {
   from {
     width: 0%;
-  } to {
+  }
+  to {
     width: 100%;
   }
- }
+}
 
 @keyframes Show {
   from {
@@ -456,5 +457,11 @@ footer {
 @keyframes iconPig {
   to {
     transform: rotateY(-360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  header .nav .menu {
+    gap: 16px;
   }
 }

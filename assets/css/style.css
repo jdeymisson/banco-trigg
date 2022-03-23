@@ -47,58 +47,60 @@ header .trigg-logo img {
   width: 100%;
 }
 
-header .nav ul {
+header .nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 32px;
+  gap: 26px;
   list-style: none;
   font-size: 0.875rem;
   line-height: 22px;
 }
 
-header .nav ul li {
+header .nav .menu li {
   position: relative;
 }
 
-header .nav ul .li-list:hover::before {
-  content: '';
+header .nav .menu .li-list:hover::before {
+  content: "";
   position: absolute;
   display: block;
   bottom: -7px;
   left: 0;
-  -webkit-animation: lianimate .5s  forwards;
-          animation: lianimate .5s  forwards;
-  -webkit-transition: width .5s;
-  transition: width .5s;
+  -webkit-animation: lianimate 0.5s forwards;
+          animation: lianimate 0.5s forwards;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
   height: 5px;
   background: #01ffe7;
 }
 
-header .nav ul .access {
+header .nav .menu .access {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   padding: 8px 24px;
   border: 1px solid #fff;
   border-radius: 6px;
   font-weight: bold;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-header .nav ul .access:hover {
+header .nav .menu .access:hover {
   background: #fff;
   color: #01cfbb;
 }
 
-header .nav ul .menu-user {
+header .nav .menu .menu-user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,7 +110,7 @@ header .nav ul .menu-user {
   gap: 8px;
 }
 
-header .nav ul .menu-user .icon-user {
+header .nav .menu .menu-user .icon-user {
   width: 20px;
   height: 20px;
   display: -webkit-box;
@@ -122,7 +124,7 @@ header .nav ul .menu-user .icon-user {
           justify-content: flex-start;
 }
 
-header .nav ul .menu-user .icon-user img {
+header .nav .menu .menu-user .icon-user img {
   width: 100%;
 }
 
@@ -139,8 +141,8 @@ header .nav ul .menu-user .icon-user img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-animation: Show  .5s forwards;
-          animation: Show  .5s forwards;
+  -webkit-animation: Show 0.5s forwards;
+          animation: Show 0.5s forwards;
 }
 
 .content-banner .content-left h1 {
@@ -191,8 +193,8 @@ header .nav ul .menu-user .icon-user img {
 }
 
 .content-banner .content-right {
-  -webkit-animation: Show .5s forwards;
-          animation: Show .5s forwards;
+  -webkit-animation: Show 0.5s forwards;
+          animation: Show 0.5s forwards;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -231,9 +233,11 @@ header .nav ul .menu-user .icon-user img {
   position: absolute;
 }
 
-.content-banner .content-right .social .facebook img:hover, .content-banner .content-right .social .instagram img:hover, .content-banner .content-right .social .twitter img:hover {
-  -webkit-animation: SocialRotate .7s;
-          animation: SocialRotate .7s;
+.content-banner .content-right .social .facebook img:hover,
+.content-banner .content-right .social .instagram img:hover,
+.content-banner .content-right .social .twitter img:hover {
+  -webkit-animation: SocialRotate 0.7s;
+          animation: SocialRotate 0.7s;
 }
 
 .demostration .image-hero {
@@ -368,12 +372,14 @@ header .nav ul .menu-user .icon-user img {
   margin-top: 50px;
 }
 
-.cashcenter .cel-desmonstration .happy, .cashcenter .cel-desmonstration .pig-white {
+.cashcenter .cel-desmonstration .happy,
+.cashcenter .cel-desmonstration .pig-white {
   width: 70px;
   height: 70px;
 }
 
-.cashcenter .cel-desmonstration .happy img, .cashcenter .cel-desmonstration .pig-white img {
+.cashcenter .cel-desmonstration .happy img,
+.cashcenter .cel-desmonstration .pig-white img {
   width: 100%;
 }
 
@@ -639,6 +645,12 @@ footer {
   to {
     -webkit-transform: rotateY(-360deg);
             transform: rotateY(-360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  header .nav .menu {
+    gap: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
