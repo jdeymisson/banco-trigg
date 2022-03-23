@@ -8,9 +8,15 @@ inputRange.addEventListener("input", () => {
 
 const btnMobile = document.querySelector(".btn-mobile");
 
-function menuToggle() {
+function menuToggle(event) {
+  if (event.type === "touchstart") {
+    event.preventDefault();
+  }
   const nav = document.querySelector(".nav");
   nav.classList.toggle("active");
+  nav.classList.contains("active")
+    ? event.currentTarget.setAttribute("aria-expendes", "true")
+    : event.currentTarget.setAttribute("aria-expendes", "false");
 }
 
 btnMobile.addEventListener("click", menuToggle);
