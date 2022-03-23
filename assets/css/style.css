@@ -47,12 +47,14 @@ header .trigg-logo img {
   width: 100%;
 }
 
+header .nav .btn-mobile {
+  display: none;
+}
+
 header .nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -65,11 +67,13 @@ header .nav .menu {
   line-height: 22px;
 }
 
-header .nav .menu li {
+header .nav .menu li a {
   position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-header .nav .menu .li-list:hover::before {
+header .nav .menu .li-list a:hover::before {
   content: "";
   position: absolute;
   display: block;
@@ -87,12 +91,13 @@ header .nav .menu .access {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  display: inline-block;
   padding: 8px 24px;
   border: 1px solid #fff;
   border-radius: 6px;
   font-weight: bold;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
 }
 
 header .nav .menu .access:hover {
@@ -238,6 +243,10 @@ header .nav .menu .menu-user .icon-user img {
 .content-banner .content-right .social .twitter img:hover {
   -webkit-animation: SocialRotate 0.7s;
           animation: SocialRotate 0.7s;
+}
+
+.demostration .hero2 {
+  display: none;
 }
 
 .demostration .image-hero {
@@ -651,6 +660,115 @@ footer {
 @media (max-width: 768px) {
   header .nav .menu {
     gap: 16px;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 70px;
+    right: 0;
+    background: #00bdad;
+    z-index: 1000;
+    overflow-y: hidden;
+  }
+  header .nav.active .menu {
+    gap: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+    padding-top: 50px;
+  }
+  header .nav .btn-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 10px;
+  }
+  header .nav #hamburguer {
+    color: #01ffe7;
+    width: 24px;
+    border-top: 3px solid;
+    display: block;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  header .nav #hamburguer::after, header .nav #hamburguer::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-top: 3px;
+    background: currentColor;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: relative;
+  }
+  header .nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  header .nav.active #hamburguer::before {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  header .nav.active #hamburguer::after {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    top: -6px;
+  }
+  .nav.active .menu li {
+    margin-bottom: 28px;
+  }
+  .nav.active .menu li a {
+    font-size: 1.125rem;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 640px) {
+  .content-banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-banner .content-left h1 {
+    margin-top: 20px;
+    font-size: 4rem;
+  }
+  .content-banner .content-left .content-benefits {
+    margin-bottom: 20px;
+  }
+  .content-banner .content-right {
+    margin-top: 50px;
+  }
+  .cashback .cashright {
+    padding: 60px 0;
+  }
+  .cashback .cash-title {
+    padding-top: 60px;
+  }
+  .demostration .hero1 {
+    display: none;
+  }
+  .demostration .hero2 {
+    display: block;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
